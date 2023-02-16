@@ -1,9 +1,9 @@
 <!-- submit-form.php -->
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+  $name = $_GET['name'];
+  $email = $_GET['email'];
+  $message = $_GET['message'];
 
   // send email with the user's information
   $to = "your-email-address@example.com";
